@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+#andrew {
+  max-width: 250px;
+  width: 100%;
+}
+
+html {
+  background-image: url(../img/pinkbgg.jpg);
+}
+.all {
+  float: right;
+  margin-right: 44%;
+  margin-top: 15em;
+}
+.text {
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
