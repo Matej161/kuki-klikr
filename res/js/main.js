@@ -11,8 +11,10 @@ console.log(PI);
 
 const andrew = document.getElementById("andrew");
 const counter = document.getElementById("counter");
+const upgradeButton = document.getElementById("upgradeButton");
 
 let numberofandrews = 0;
+let clickIncrease = 1;
 
 // {} - scope
 // () => arrow funkce
@@ -22,7 +24,18 @@ andrew.onclick = () => {
     //numberofandrews = numberofandrews + 1;
     //numberofandrews += 1;
     //++ pricte jednicku - inkrement
-    numberofandrews++;
+    numberofandrews += clickIncrease;
     console.log(numberofandrews);
     counter.innerHTML  = "Andrews: " + numberofandrews;
+}
+
+upgradeButton.onclick = () => {
+    if (numberofandrews >= 50) {
+        //odečtu cenu
+        numberofandrews -=50;
+        //numberofandrews= numberofandrews - 50 - to stejný jako nad tim;
+        counter.innerHTML  = "Andrews: " + numberofandrews;
+        clickIncrease++;
+        //zvednutí pocet na klik
+    }
 }
