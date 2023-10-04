@@ -4,7 +4,9 @@
   width: 100%;
   margin-top: 10em;
 }
-
+*{
+  user-select: none;
+}
 html {
   background-image: url(../img/pinkbgg.jpg);
 }
@@ -23,4 +25,18 @@ button{
   background-color: pink;
   color: black;
   cursor: pointer;
+}
+.upgradeImg{
+  max-width: 60px;
+  width: 100%;
+}
+#upgradeButtonWrapper{
+  border: 3px solid black;
+  background-color: blueviolet;
+  display: flex;
+  transition: .2 ease;
+  cursor: pointer;
+}
+#upgradeButtonWrapper:hover{
+  transform: scale(1.2);
 }

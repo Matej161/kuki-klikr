@@ -18,6 +18,7 @@ const autoclick = document.getElementById("Autoclick");
 //! promenna se muze menit
 let numberofandrews = 0;
 let clickIncrease = 1;
+let clickUpgradePrice =50;
 let autoclickIncrease = 0;
 let autoclicker;
 let autoclickerPrice = 100;
@@ -36,11 +37,13 @@ andrew.onclick = () => {
 };
 
 upgradeButton.onclick = () => {
-  if (numberofandrews >= 50) {
+  if (numberofandrews >= clickUpgradePrice) {
     //*odečtu cenu
-    numberofandrews -= 50;
+    numberofandrews -= clickUpgradePrice;
     //!numberofandrews= numberofandrews - 50 - to stejný jako nad tim;
     counter.innerText = "Andrews: " + numberofandrews;
+    clickUpgradePrice += 50;
+    upgradeButton.innerText = "Buy upgrade: " + clickUpgradePrice;
     clickIncrease++;
     //*zvednutí pocet na klik
   }
