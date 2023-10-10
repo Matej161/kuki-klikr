@@ -3,6 +3,7 @@
   max-width: 350px;
   width: 100%;
   margin-top: 10em;
+  cursor: pointer;
 }
 * {
   user-select: none;
@@ -29,10 +30,13 @@ button {
   font-size: x-large;
 }
 button:hover {
-  cursor: url(../img/cursor.png);
+  cursor: pointer;
 }
 .upgradeImg {
   width: 20%;
+}
+.upgradeImg:hover{
+  cursor: pointer;
 }
 #upgradeButtonWrapper {
   border: 3px solid black;
@@ -42,7 +46,7 @@ button:hover {
   margin: auto;
   width: 100%;
 }
-#autoClickerWrapper{
+#autoClickerWrapper {
   border: 3px solid black;
   background-color: blueviolet;
   transition: 0.15 ease;
@@ -53,8 +57,9 @@ button:hover {
 }
 #upgradeButtonWrapper:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }
 #autoClickerWrapper:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }
-
