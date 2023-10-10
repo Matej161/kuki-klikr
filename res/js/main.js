@@ -12,13 +12,13 @@ console.log(PI);
 //! promenna je vymezeny misto pameti v pocitaci, muzeme do nich davat cisla, upravovat, mazat, číst
 const andrew = document.getElementById("andrew");
 const counter = document.getElementById("counter");
-const upgradeButton = document.getElementById("upgradeButton");
+const upgradeButtonWrapper = document.getElementById("upgradeButtonWrapper");
 const autoclick = document.getElementById("Autoclick");
 
 //! promenna se muze menit
 let numberofandrews = 0;
 let clickIncrease = 1;
-let clickUpgradePrice =50;
+let clickUpgradePrice = 50;
 let autoclickIncrease = 0;
 let autoclicker;
 let autoclickerPrice = 100;
@@ -36,7 +36,7 @@ andrew.onclick = () => {
   counter.innerText = "Andrews: " + numberofandrews;
 };
 
-upgradeButton.onclick = () => {
+upgradeButtonWrapper.onclick = () => {
   if (numberofandrews >= clickUpgradePrice) {
     //*odečtu cenu
     numberofandrews -= clickUpgradePrice;
@@ -68,13 +68,13 @@ autoclick.onclick = () => {
   }
 };
 const turnOnCheats = () => {
-  numberofandrews += 1000000;
+  numberofandrews += 100000;
   counter.innerText = "Andrews: " + numberofandrews;
 };
 turnOnCheats();
 
-function turnOnSuperCheats() {
+/*function turnOnSuperCheats() {
   numberofandrews += 10000000;
   counter.innerText = "Andrews: " + numberofandrews;
 }
-turnOnSuperCheats();
+turnOnSuperCheats();*/

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 #andrew {
-  max-width: 250px;
+  max-width: 350px;
   width: 100%;
   margin-top: 10em;
 }
-*{
+* {
   user-select: none;
 }
 html {
@@ -16,27 +16,45 @@ html {
   margin: auto;
 }
 .text {
-  font-size: xx-large;
+  font-size: 30px;
   text-align: center;
   color: white;
 }
-button{
-  padding: 40px;
-  background-color: pink;
-  color: black;
-  cursor: pointer;
+button {
+  padding: 10px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  width: 80%;
+  font-size: x-large;
 }
-.upgradeImg{
-  max-width: 60px;
-  width: 100%;
+button:hover {
+  cursor: url(../img/cursor.png);
 }
-#upgradeButtonWrapper{
+.upgradeImg {
+  width: 20%;
+}
+#upgradeButtonWrapper {
   border: 3px solid black;
   background-color: blueviolet;
-  display: flex;
-  transition: .2 ease;
-  cursor: pointer;
+  transition: 0.15 ease;
+  max-width: 15%;
+  margin: auto;
+  width: 100%;
 }
-#upgradeButtonWrapper:hover{
-  transform: scale(1.2);
+#autoClickerWrapper{
+  border: 3px solid black;
+  background-color: blueviolet;
+  transition: 0.15 ease;
+  max-width: 15%;
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
 }
+#upgradeButtonWrapper:hover {
+  transform: scale(1.15);
+}
+#autoClickerWrapper:hover {
+  transform: scale(1.15);
+}
+
